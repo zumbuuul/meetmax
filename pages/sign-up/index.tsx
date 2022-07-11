@@ -1,10 +1,13 @@
 import { NextPage } from "next";
+
 import SingUpHeader from "../../components/sign-up/SignUpHeader";
+import SignUpForm from "../../components/sign-up/SignUpForm";
 
 const SignUp: NextPage = () => {
   return (
     <>
       <SingUpHeader />
+      <SignUpForm></SignUpForm>
     </>
   );
 };
