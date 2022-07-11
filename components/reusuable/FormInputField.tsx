@@ -29,7 +29,7 @@ const FormInputField = ({ label, ...props }: FormInputFieldProps) => {
         <input
           {...props}
           {...field}
-          className="w-full border-2 rounded border-lightgrey text-darkgrey py-2 px-10"
+          className="w-full border-2 rounded border-lightgrey text-darkgrey py-2 pl-10"
         />
       </div>
       {meta.touched && meta.error ? (

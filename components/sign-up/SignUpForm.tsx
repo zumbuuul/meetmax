@@ -3,12 +3,13 @@ import Link from "next/link";
 
 import FormInputField from "../reusuable/FormInputField";
 import ButtonWithIcon from "../reusuable/ButtonWithIcon";
+import FormDatePicker from "../reusuable/FormDatePicker";
 
 interface FormValues {
   name: string;
   email: string;
   password: string;
-  dateOfBirth: string;
+  dateOfBirth: any;
   gender: string;
 }
 
@@ -66,6 +67,15 @@ const SignUpForm = () => {
             name="password"
             placeholder="Enter your password"
           ></FormInputField>
+
+          <div className="mt-5 flex gap-5">
+            <FormDatePicker
+              name="dateOfBirth"
+              inputiconpath="calendar"
+              placeholder="Select DOB"
+            />
+          </div>
+
           <button
             type="submit"
             className="w-full bg-skyblue mt-5 py-5 rounded-lg text-dirtywhite font-semibold"
