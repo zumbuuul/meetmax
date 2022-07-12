@@ -34,7 +34,7 @@ const ForgotPasswordForm: NextPage = () => {
             >
               Send
             </button>
-            <a href="#">
+            <a href="/log-in">
               <div className="flex mt-[20px] justify-center items-center">
                 <img
                   src="blue arrow left.png"

@@ -64,7 +64,7 @@ const LogInForm: NextPage = () => {
                 </span>
               </div>
               <p className="text-grey font-semibold text-sm">
-                <a href="#">Forgot Password?</a>
+                <a href="/forgot-password">Forgot Password?</a>
               </p>
             </div>
 
