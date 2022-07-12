@@ -1,9 +1,11 @@
 import { Formik, Form } from "formik";
 import Link from "next/link";
+import Image from "next/image";
 
 import FormInputField from "../reusuable/FormInputField";
 import ButtonWithIcon from "../reusuable/ButtonWithIcon";
 import FormDatePicker from "../reusuable/FormDatePicker";
+import FormRadioInput from "../reusuable/FormRadioInput";
 
 interface FormValues {
   name: string;
@@ -69,11 +71,35 @@ const SignUpForm = () => {
           ></FormInputField>
 
           <div className="mt-5 flex gap-5">
-            <FormDatePicker
-              name="dateOfBirth"
-              inputiconpath="calendar"
-              placeholder="Select DOB"
-            />
+            <div className="w-full">
+              <FormDatePicker
+                name="dateOfBirth"
+                inputiconpath="calendar"
+                placeholder="Enter your birthday"
+              />
+            </div>
+            <div className="border-lightgrey border-2 rounded-lg w-full relative">
+              <div className="absolute top-3 left-3">
+                <Image
+                  src="/gender.png"
+                  width="16px"
+                  height="16px"
+                  alt="gender"
+                ></Image>
+              </div>
+              <div className="w-full h-full flex items-center justify-end pr-8 gap-2">
+                <FormRadioInput
+                  value="male"
+                  name="gender"
+                  label="Male"
+                ></FormRadioInput>
+                <FormRadioInput
+                  value="female"
+                  name="gender"
+                  label="Female"
+                ></FormRadioInput>
+              </div>
+            </div>
           </div>
 
           <button

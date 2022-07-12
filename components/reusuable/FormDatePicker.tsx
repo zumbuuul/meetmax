@@ -13,7 +13,7 @@ interface FormInputFieldProps {
 const FormDatePicker = ({ label, ...props }: FormInputFieldProps) => {
   const { setFieldValue } = useFormikContext();
   const [field, meta] = useField(props.name);
-
+  console.log(new Date());
   return (
     <div className="relative">
       <label htmlFor={label}>{label}</label>
@@ -26,13 +26,17 @@ const FormDatePicker = ({ label, ...props }: FormInputFieldProps) => {
         ></Image>
       </div>
       <DatePicker
-        {...props}
+        placeholderText={props.placeholder}
         {...field}
         selected={field.value || null}
         onChange={(val) => {
           setFieldValue(field.name, val);
         }}
         dateFormat="dd/MM/yyyy"
+        maxDate={new Date()}
+        showYearDropdown
+        yearDropdownItemNumber={100}
+        scrollableYearDropdown
       />
     </div>
   );

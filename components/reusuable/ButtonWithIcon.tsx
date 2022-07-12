@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 interface ButtonWithIconProps {
-  text: string;
+  text?: string;
   iconpath: string;
 }
 
