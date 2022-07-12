@@ -36,9 +36,9 @@ const SignUpForm = () => {
       </div>
 
       <div className="flex items-center gap-5 mt-8 ">
-        <hr className="w-full "></hr>
+        <hr className="w-full opacity-20"></hr>
         <p className="font-semibold text-darkgrey">OR</p>
-        <hr className="w-full"></hr>
+        <hr className="w-full opacity-20"></hr>
       </div>
 
       <Formik

@@ -12,8 +12,8 @@ const ButtonWithIcon = ({ text, iconpath }: ButtonWithIconProps) => {
         <Image
           src={`/${iconpath}.png`}
           alt="Google logo"
-          width="20px"
-          height="20px"
+          width="16px"
+          height="16px"
         ></Image>
       </div>
       <p className="font-semibold text-sm ml-14 ">{text}</p>

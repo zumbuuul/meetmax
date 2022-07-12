@@ -17,6 +17,7 @@ module.exports = {
       // => @media (min-width: 1280px) { ... }
     },
     colors: {
+      checkboxgrey: "#8A94A6",
       grey: "#4E5D78",
       lightgrey: "#D3D3D3",
       darkgrey: "#4E5D78",
