@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-dzuda;
-=======
 import { useField } from "formik";
 import Image from "next/image";
 
@@ -43,4 +40,3 @@ const FormInputField = ({ label, ...props }: FormInputFieldProps) => {
 };
 
 export default FormInputField;
->>>>>>> 6d726ecd6c8f88f29e42d00d62b75fe17d1bef6b

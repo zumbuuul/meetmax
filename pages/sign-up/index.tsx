@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 
-import SingUpHeader from "../../components/sign-up/SignUpHeader";
+import SingUpHeader from "../../components/reusuable/SignUpLogInHeader";
 import SignUpForm from "../../components/sign-up/SignUpForm";
 
 const SignUp: NextPage = () => {

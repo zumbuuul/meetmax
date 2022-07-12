@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import SelectLanguage from "./SelectLanguage";
+import SelectLanguage from "../sign-up/SelectLanguage";
 import Image from "next/image";
 
 const SingUpHeader: NextPage = () => {
