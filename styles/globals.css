@@ -2,11 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap");
+
 * {
   margin: 0;
-  box-sizing: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-a {
-  text-decoration: none;
+.react-datepicker__input-container input {
+  border: 2px solid #d3d3d3;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2.5rem;
+  color: #4e5d78;
+  width: 100%;
 }
