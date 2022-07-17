@@ -2,6 +2,7 @@ import { Formik, Form } from "formik";
 import { NextPage } from "next";
 import Link from "next/link";
 import ButtonWithIcon from "../reusuable/ButtonWithIcon";
+import FormCheckboxField from "../reusuable/FormCheckboxField";
 import FormInputField from "../reusuable/FormInputField";
 
 const LogInForm: NextPage = () => {
@@ -35,6 +36,7 @@ const LogInForm: NextPage = () => {
           initialValues={{
             email: "",
             password: "",
+            rememberUser: false,
           }}
           onSubmit={(values) => {
             console.log(values);
@@ -54,15 +56,10 @@ const LogInForm: NextPage = () => {
 
             <div className="flex mt-[20px] px-2 justify-between items-center">
               <div>
-                <input
-                  type="checkbox"
-                  name=""
-                  id=""
-                  className="bg-checkboxgrey h-4 w-4 align-bottom relative top-[-4.5px] "
-                />
-                <span className="ml-[12px] text-grey font-semibold text-sm">
-                  Remember me
-                </span>
+                <FormCheckboxField
+                  name="rememberUser"
+                  label="Remember Me"
+                ></FormCheckboxField>
               </div>
               <p className="text-grey font-semibold text-sm">
                 <Link href="/forgot-password">

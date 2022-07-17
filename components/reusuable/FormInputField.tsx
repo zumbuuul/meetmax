@@ -14,7 +14,7 @@ const FormInputField = ({ label, ...props }: FormInputFieldProps) => {
   const [field, meta] = useField(props.name);
 
   return (
-    <div>
+    <>
       <label htmlFor={props.name}>{label}</label>
       <br></br>
       <div className="relative">
@@ -35,7 +35,7 @@ const FormInputField = ({ label, ...props }: FormInputFieldProps) => {
       {meta.touched && meta.error ? (
         <p className="text-s text-red">{meta.error}</p>
       ) : null}
-    </div>
+    </>
   );
 };
 
