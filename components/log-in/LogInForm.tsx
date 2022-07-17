@@ -1,5 +1,6 @@
 import { Formik, Form } from "formik";
 import { NextPage } from "next";
+import Link from "next/link";
 import ButtonWithIcon from "../reusuable/ButtonWithIcon";
 import FormInputField from "../reusuable/FormInputField";
 
@@ -64,7 +65,9 @@ const LogInForm: NextPage = () => {
                 </span>
               </div>
               <p className="text-grey font-semibold text-sm">
-                <a href="#">Forgot Password?</a>
+                <Link href="/forgot-password">
+                  <a>Forgot password?</a>
+                </Link>
               </p>
             </div>
 
@@ -78,10 +81,12 @@ const LogInForm: NextPage = () => {
         </Formik>
         <div className="flex mt-[30px] justify-center">
           <p className="mr-[15px] text-grey font-semibold font-[16px]">
-            You haven't any account?
+            You haven{`'`}t any account?
           </p>
           <p className="text-skyblue font-semibold">
-            <a href="/sign-up">Sign Up</a>
+            <Link href="/sign-up">
+              <a>Sign up</a>
+            </Link>
           </p>
         </div>
       </div>
