@@ -32,7 +32,7 @@ const CheckEmailForm: NextPage = () => {
         <div className="mt-[20px] flex justify-center">
           <p className="text-grey font-semibold ">Didn’t receive an email?</p>
           <span className="ml-[15px] text-skyblue font-semibold text-[16px]">
-            <a href="">Resend</a>
+            <a href="#">Resend</a>
           </span>
         </div>
       </div>
