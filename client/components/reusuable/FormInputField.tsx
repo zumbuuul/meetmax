@@ -15,8 +15,13 @@ const FormInputField = ({ label, ...props }: FormInputFieldProps) => {
 
   return (
     <>
-      <label htmlFor={props.name}>{label}</label>
-      <br></br>
+      {label ? (
+        <>
+          <label htmlFor={props.name}>{label}</label>
+          <br></br>
+        </>
+      ) : null}
+
       <div className="relative">
         <div className="absolute top-3 left-3">
           <Image
@@ -29,7 +34,7 @@ const FormInputField = ({ label, ...props }: FormInputFieldProps) => {
         <input
           {...props}
           {...field}
-          className="w-full border-2 rounded border-lightgrey text-darkgrey py-2 pl-10"
+          className="w-full border-2 rounded-lg border-lightgrey text-darkgrey py-2 pl-10"
         />
       </div>
       {meta.touched && meta.error ? (

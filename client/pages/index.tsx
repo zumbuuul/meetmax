@@ -1,16 +1,12 @@
 import { NextPage } from "next";
-import { useRouter } from "next/router";
-import { useEffect } from "react";
-
+import MainHeader from "../components/main/Header";
 const Test: NextPage = () => {
-  const router = useRouter();
-
-  // ovo simulira kada nisi prijavljen
-  useEffect(() => {
-    router.push("/sign-up");
-  }, []);
-
-  return <div className=""></div>;
+  return (
+    <>
+      <MainHeader></MainHeader>
+      <div className="flex"></div>
+    </>
+  );
 };
 
 export default Test;

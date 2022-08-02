@@ -70,8 +70,15 @@ const SignUpForm = () => {
             placeholder="Enter your password"
           ></FormInputField>
 
-          <div className="mt-5 flex gap-5 w-6/12">
-            <div className="border-lightgrey border-2 rounded-lg w-full relative">
+          <div className="mt-5 flex gap-5">
+            <div>
+              <FormDatePicker
+                name="dateOfBirth"
+                inputiconpath="calendar"
+                placeholder="Enter your birthday"
+              />
+            </div>
+            <div className="border-lightgrey border-2 py-2 rounded-lg w-full relative">
               <div className="absolute top-3 left-3">
                 <Image
                   src="/gender.png"
@@ -80,7 +87,7 @@ const SignUpForm = () => {
                   alt="gender"
                 ></Image>
               </div>
-              <div className="w-full h-full flex items-center gap-2 ml-[7vh]">
+              <div className="h-full flex items-center gap-2 ml-[7vh]">
                 <FormRadioInput
                   value="male"
                   name="gender"
@@ -92,13 +99,6 @@ const SignUpForm = () => {
                   label="Female"
                 ></FormRadioInput>
               </div>
-            </div>
-            <div className="min-w-2/12">
-              <FormDatePicker
-                name="dateOfBirth"
-                inputiconpath="calendar"
-                placeholder="Enter your birthday"
-              />
             </div>
           </div>
 
