@@ -71,14 +71,14 @@ const SignUpForm = () => {
           ></FormInputField>
 
           <div className="mt-5 flex gap-5">
-            <div className="w-full">
+            <div>
               <FormDatePicker
                 name="dateOfBirth"
                 inputiconpath="calendar"
                 placeholder="Enter your birthday"
               />
             </div>
-            <div className="border-lightgrey border-2 rounded-lg w-full relative">
+            <div className="border-lightgrey border-2 py-2 rounded-lg w-full relative">
               <div className="absolute top-3 left-3">
                 <Image
                   src="/gender.png"
@@ -87,7 +87,7 @@ const SignUpForm = () => {
                   alt="gender"
                 ></Image>
               </div>
-              <div className="w-full h-full flex items-center justify-end pr-8 gap-2">
+              <div className="h-full flex items-center gap-2 ml-[7vh]">
                 <FormRadioInput
                   value="male"
                   name="gender"

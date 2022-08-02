@@ -1,16 +1,19 @@
 import { NextPage } from "next";
-import { useRouter } from "next/router";
-import { useEffect } from "react";
-
+import Feed from "../components/main/Feed";
+import FriendList from "../components/main/FriendList";
+import MainHeader from "../components/main/Header";
+import Sidebar from "../components/main/Sidebar";
 const Test: NextPage = () => {
-  const router = useRouter();
-
-  // ovo simulira kada nisi prijavljen
-  useEffect(() => {
-    router.push("/sign-up");
-  }, []);
-
-  return <div className=""></div>;
+  return (
+    <>
+      <MainHeader></MainHeader>
+      <div className="flex h-full w-full">
+        <Sidebar></Sidebar>
+        <Feed></Feed>
+        <FriendList></FriendList>
+      </div>
+    </>
+  );
 };
 
 export default Test;
