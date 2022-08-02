@@ -41,12 +41,13 @@ const MainHeader: NextPage = () => {
           height="20px"
         ></Image>
       </div>
-      <div className="hidden laptop:block w-[15vw]">
+      <div className="items-center justify-center laptop:flex hidden w-[15vw]">
         <Image
           src="/Logo.png"
           alt="Meetmax logo"
           width="112px"
           height="28px"
+          className="inline-block"
         ></Image>
       </div>
     </header>
