@@ -1,9 +1,17 @@
 import { NextPage } from "next";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 const CheckEmailForm: NextPage = () => {
   const router = useRouter();
+  let [name, setName] = useState<string | null>(null);
+  let item;
+  let test;
+  useEffect(() => {
+    console.log("a");
+    setName(sessionStorage.getItem("name"));
+  }, []);
 
   return (
     <>
@@ -13,10 +21,7 @@ const CheckEmailForm: NextPage = () => {
         </h1>
         <h1 className="text-l text-darkgrey font-semibold text-center mb-[30px]">
           We’ve sent a link to your email address:
-          <span className="text-skyblue">
-            {" "}
-            {sessionStorage.getItem("name")}
-          </span>
+          <span className="text-skyblue"> {name}</span>
         </h1>
 
         <button
