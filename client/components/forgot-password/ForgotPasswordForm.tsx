@@ -10,10 +10,10 @@ const ForgotPasswordForm: NextPage = () => {
   return (
     <>
       <div className="w-3/12 min-w-[300px] mx-auto mt-15">
-        <h1 className="text-3xl text-darkgrey font-semibold text-center mb-4">
+        <h1 className="text-3xl text-black-900 font-semibold text-center mb-4">
           Forgot password?
         </h1>
-        <h1 className="text-l text-darkgrey font-semibold text-center mb-12">
+        <h1 className="text-l text-black-900 font-semibold text-center mb-12">
           Enter your details to receive a rest link
         </h1>
 
@@ -29,14 +29,14 @@ const ForgotPasswordForm: NextPage = () => {
         >
           <Form>
             <FormInputField
-              inputiconpath="mail-@"
+              inputiconpath="icons/mail-@"
               name="email"
               placeholder="Enter your email"
             ></FormInputField>
 
             <button
               type="submit"
-              className="w-full bg-skyblue mt-5 py-5 rounded-lg text-dirtywhite font-semibold"
+              className="w-full bg-blue-500 mt-5 py-5 rounded-lg text-grey-100 font-semibold"
             >
               Send reset link
             </button>
@@ -45,13 +45,13 @@ const ForgotPasswordForm: NextPage = () => {
                 <div className="flex mt-[20px] justify-center items-center">
                   <div className=" mr-[14px]">
                     <Image
-                      src="/blue arrow left.png"
+                      src="icons/blue arrow left.png"
                       alt="Arrow"
                       width="6px"
                       height="10px"
                     />
                   </div>
-                  <p className="text-skyblue font-semibold text-[16px]">
+                  <p className="text-blue-500 font-semibold text-[16px]">
                     Back to Sign In
                   </p>
                 </div>

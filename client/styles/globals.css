@@ -12,9 +12,10 @@
 }
 
 .react-datepicker__input-container input {
-  border: 2px solid #d3d3d3;
+  border: 2px solid #b8bec9;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 2.5rem;
   color: #4e5d78;
+  border-radius: 8px;
 }

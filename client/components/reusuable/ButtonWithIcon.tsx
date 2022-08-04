@@ -7,7 +7,7 @@ interface ButtonWithIconProps {
 
 const ButtonWithIcon = ({ text, iconpath }: ButtonWithIconProps) => {
   return (
-    <div className="w-full bg-dirtywhite text-darkgrey relative py-3 rounded-lg hover:cursor-pointer">
+    <div className="w-full bg-grey-300 text-black-900 relative py-3 rounded-lg hover:cursor-pointer">
       <div className="absolute top-3 left-5">
         <Image
           src={`/${iconpath}.png`}
