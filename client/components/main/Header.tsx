@@ -1,5 +1,7 @@
 import { NextPage } from "next";
 import Image from "next/image";
+import Link from "next/link";
+
 import { Formik, Form } from "formik";
 import FormInputField from "../reusuable/FormInputField";
 
@@ -7,7 +9,7 @@ const MainHeader: NextPage = () => {
   return (
     <header className="sticky top-0 left-0 flex items-center h-[10vh] justify- gap-[20px] laptop:flex-row-reverse w-[90vw] laptop:w-[97vw] mx-auto">
       <div className="relative laptop:flex gap-[20px] items-center">
-        <p className="hidden laptop:inline-block whitespace-nowrap">
+        <p className="hidden laptop:inline-block whitespace-nowrap font-semibold text-grey-900">
           Saleh Ahmed
         </p>
         <div className="w-[35px] laptop:w-[50px]">
@@ -16,7 +18,7 @@ const MainHeader: NextPage = () => {
             alt="Profile Picture "
             width="50px"
             height="50px"
-            className="rounded-full w-[50px]"
+            className="rounded-lg w-[50px]"
           ></Image>
         </div>
       </div>
@@ -28,7 +30,7 @@ const MainHeader: NextPage = () => {
             <FormInputField
               name="search"
               placeholder="Search for anything!"
-              inputiconpath="magnifyinglass"
+              inputiconpath="icons/magnifyinglass"
             ></FormInputField>
           </Form>
         </Formik>
@@ -42,13 +44,17 @@ const MainHeader: NextPage = () => {
         ></Image>
       </div>
       <div className="items-center justify-center laptop:flex hidden w-[15vw]">
-        <Image
-          src="/Logo.png"
-          alt="Meetmax logo"
-          width="112px"
-          height="28px"
-          className="inline-block"
-        ></Image>
+        <Link href="/sign-up">
+          <a>
+            <Image
+              src="/icons/Logo.png"
+              alt="Meetmax logo"
+              width="112px"
+              height="28px"
+              className="inline-block"
+            ></Image>
+          </a>
+        </Link>
       </div>
     </header>
   );
