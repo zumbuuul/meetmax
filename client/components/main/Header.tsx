@@ -44,7 +44,7 @@ const MainHeader: NextPage = () => {
         ></Image>
       </div>
       <div className="items-center justify-center laptop:flex hidden w-[15vw]">
-        <Link href="/sign-up">
+        <Link href="/">
           <a>
             <Image
               src="/icons/Logo.png"
