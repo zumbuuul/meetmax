@@ -5,8 +5,15 @@ interface SidebarButtonProps {
   buttontext: string;
 }
 
-const SidebarButton: NextPage<SidebarButtonProps> = () => {
-  return <div></div>;
+const SidebarButton: NextPage<SidebarButtonProps> = ({
+  buttontext,
+  iconpath,
+}) => {
+  return (
+    <div data-cy="main">
+      <p>{buttontext}</p>
+    </div>
+  );
 };
 
 export default SidebarButton;
