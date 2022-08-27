@@ -7,10 +7,16 @@ const Test: NextPage = () => {
   return (
     <>
       <MainHeader></MainHeader>
-      <div className="flex h-full w-full">
-        <Sidebar></Sidebar>
-        <Feed></Feed>
-        <FriendList></FriendList>
+      <div className="flex">
+        <div className="w-2/12">
+          <Sidebar></Sidebar>
+        </div>
+        <div className="w-full mx-4">
+          <Feed></Feed>
+        </div>
+        <div className="w-3/12">
+          <FriendList></FriendList>
+        </div>
       </div>
     </>
   );
