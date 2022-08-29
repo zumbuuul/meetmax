@@ -14,9 +14,6 @@ const Test: NextPage = () => {
         <div className="w-full mx-4">
           <Feed></Feed>
         </div>
-        <div className="w-3/12">
-          <FriendList></FriendList>
-        </div>
       </div>
     </>
   );

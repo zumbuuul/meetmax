@@ -8,7 +8,7 @@ const Sidebar: NextPage = () => {
         <SidebarButton
           iconpath="Home"
           buttontext="Feed"
-          route="/"
+          route={"/" || "post"}
         ></SidebarButton>
         <SidebarButton
           iconpath="Community"
