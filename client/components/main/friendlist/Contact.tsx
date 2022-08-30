@@ -1,7 +1,11 @@
 import { NextPage } from "next";
 import Image from "next/image";
 
-const Contact: NextPage = () => {
+interface ContactI {
+  contactName: string;
+}
+
+const Contact: NextPage<ContactI> = ({ contactName }) => {
   return (
     <>
       <div className="flex py-2 items-center">
@@ -14,9 +18,9 @@ const Contact: NextPage = () => {
             className="rounded-full"
           ></Image>
         </div>
-        <div className="w-full">
-          <span className="text-[1rem] text-grey-1100 font-medium">
-            Contact Name
+        <div>
+          <span className="w-max inline-block text-[1rem] text-grey-1100 font-medium">
+            {contactName}
           </span>
           {/* mislim da bi trebalo sve sto ima veze sa FriendListom da se preimenuje u ContactList/Contacts
           jer planiram da ubacim opciju da mozes da se dopisujes sa firmama, i pravnim licima koji nisu ljudi/prijatelji */}
